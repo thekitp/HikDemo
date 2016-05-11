@@ -19,21 +19,24 @@ HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
 
-#LIBS += ./libhcnetsdk.so\
-#    ./libhpr.so\
-#    ./libHCCore.so\
-#    ./HCNetSDKCom/libStreamTransClient.so\
-#    ./HCNetSDKCom/libHCPreview.so\
-#    ./HCNetSDKCom/libSystemTransform.so\
-#    ./HCNetSDKCom/libHCAlarm.so\
-#    ./HCNetSDKCom/libHCPlayBack.so\
-#    ./HCNetSDKCom/libiconv2.so\
-#    ./HCNetSDKCom/libHCIndustry.so\
-#    ./HCNetSDKCom/libHCDisplay.so\
-#    ./HCNetSDKCom/libHCVoiceTalk.so\
-#    ./HCNetSDKCom/libHCCoreDevCfg.so\
-#    ./HCNetSDKCom/libHCGeneralCfgMgr.so\
-#    ./HCNetSDKCom/libanalyzedata.so
+LIBS += ./libhcnetsdk.so\
+    ./libhpr.so\
+    ./libHCCore.so\
+    ./HCNetSDKCom/libPlayCtrl.so\
+    ./HCNetSDKCom/libAudioRender.so\
+    ./HCNetSDKCom/libSuperRender.so\
+    ./HCNetSDKCom/libStreamTransClient.so\
+    ./HCNetSDKCom/libHCPreview.so\
+    ./HCNetSDKCom/libSystemTransform.so\
+    ./HCNetSDKCom/libHCAlarm.so\
+    ./HCNetSDKCom/libHCPlayBack.so\
+    ./HCNetSDKCom/libiconv2.so\
+    ./HCNetSDKCom/libHCIndustry.so\
+    ./HCNetSDKCom/libHCDisplay.so\
+    ./HCNetSDKCom/libHCVoiceTalk.so\
+    ./HCNetSDKCom/libHCCoreDevCfg.so\
+    ./HCNetSDKCom/libHCGeneralCfgMgr.so\
+    ./HCNetSDKCom/libanalyzedata.so
 #LIBS += -L./ -lhcnetsdk -L./HCNetSDKCom/ -lHCP
-LIBS += -L./ -lhcnetsdk -lhpr -lHCCore\
-    -L./HCNetSDKCom/ -lStreamTransClient -lHCPreview -lSystemTransform -lHCAlarm -lHCPlayBack -liconv2 -lHCIndustry -lHCDisplay -lHCVoiceTalk -lHCCoreDevCfg -lHCGeneralCfgMgr -lanalyzedata
+#LIBS += -L. -lhcnetsdk -lhpr -lHCCore -lPlayCtrl\
+#    -L./HCNetSDKCom -lStreamTransClient -lHCPreview -lSystemTransform -lHCAlarm -lHCPlayBack -liconv2 -lHCIndustry -lHCDisplay -lHCVoiceTalk -lHCCoreDevCfg -lHCGeneralCfgMgr -lanalyzedata

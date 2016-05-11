@@ -4,6 +4,8 @@
 	#include"ApplePlayM4.h"
 #elif defined(__linux__)
 	#include"LinuxPlayM4.h"
+#elif defined(ANDROID)
+	#include"LinuxPlayM4.h"
 #elif defined(WIN32)
 	#include"WindowsPlayM4.h"
 #endif
