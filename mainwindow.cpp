@@ -131,6 +131,15 @@ void MainWindow::on_pushButton_clicked()
 }
 MainWindow::~MainWindow()
 {
+    // 停止解码
+    PlayM4_Stop(lPort);
+
+    //关闭流，回收源数据缓冲
+    PlayM4_CloseStream(lPort);
+
+    //释放播放库端口号
+    PlayM4_FreePort(lPort);
+
     NET_DVR_StopRealPlay(lRealPlayHandle);
     //注销用户
     NET_DVR_Logout(lUserID);
